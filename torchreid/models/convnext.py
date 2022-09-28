@@ -217,7 +217,7 @@ class ConvNeXt_Tiny_Weights(nn.Module):
             use_gpu=True,
             **kwargs
     ):
-        super(HACNN, self).__init__()
+        super(ConvNeXt_Tiny_Weights, self).__init__()
         self.loss = loss
         self.learn_region = learn_region
         self.use_gpu = use_gpu
