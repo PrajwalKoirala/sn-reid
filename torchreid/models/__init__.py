@@ -21,6 +21,7 @@ from .resnet_ibn_a import *
 from .resnet_ibn_b import *
 from .shufflenetv2 import *
 from .inceptionresnetv2 import *
+from .convnext import *
 
 __model_factory = {
     # image classification models
@@ -74,7 +75,8 @@ __model_factory = {
     'osnet_ain_x1_0': osnet_ain_x1_0,
     'osnet_ain_x0_75': osnet_ain_x0_75,
     'osnet_ain_x0_5': osnet_ain_x0_5,
-    'osnet_ain_x0_25': osnet_ain_x0_25
+    'osnet_ain_x0_25': osnet_ain_x0_25,
+    'convnext': ConvNeXt_Tiny_Weights
 }
 
 
@@ -89,7 +91,7 @@ def show_avai_models():
 
 
 def build_model(
-    name, num_classes, loss='softmax', pretrained=True, use_gpu=True
+        name, num_classes, loss='softmax', pretrained=True, use_gpu=True
 ):
     """A function wrapper for building a model.
 

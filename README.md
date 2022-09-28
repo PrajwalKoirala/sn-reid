@@ -154,6 +154,12 @@ To train the baseline model, run:
 python benchmarks/baseline/main.py --config-file benchmarks/baseline/configs/baseline_config.yaml
 ```
 
+To train the custom model, run:
+
+```
+python benchmarks/baseline/main.py --config-file benchmarks/baseline/configs/custom_config.yaml
+```
+
 Running this script will automatically download the dataset in the folder specified by the `data.root` config.
 
 Have a look at the YAML configuration file [baseline_config.yaml](benchmarks/baseline/configs/baseline_config.yaml) and related default configuration [default_config.py](benchmarks/baseline/default_config.py) for more information about the available options.
